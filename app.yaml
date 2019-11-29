@@ -4,3 +4,5 @@
 # for details.
 
 runtime: python37
+version.entrypoint.shell: 
+    
