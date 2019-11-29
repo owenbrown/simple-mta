@@ -1,8 +1,11 @@
 
 import sys
 import os
-os.getcwd()
-sys.path.append(os.path.join(os.getcwd(), 'lib'))
+
+# Add vendor directory to module search path
+parent_dir = os.path.abspath(os.path.dirname(__file__))
+vendor_dir = os.path.join(parent_dir, 'lib')
+sys.path.append(vendor_dir)
 
 from flask import Flask  # noqa
 
