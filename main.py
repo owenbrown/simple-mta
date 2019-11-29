@@ -1,6 +1,10 @@
 
-from flask import Flask
 import sys
+import os
+os.getcwd()
+sys.path.append(os.path.join(os.getcwd(), 'lib'))
+
+from flask import Flask  # noqa
 
 
 app = Flask(__name__)
