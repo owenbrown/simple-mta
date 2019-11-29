@@ -1,4 +1,5 @@
 
+# [START gae_python37_app]
 import sys
 import os
 
@@ -13,7 +14,6 @@ from flask import Flask  # noqa
 app = Flask(__name__)
 
 
-# [START app]
 @app.route('/')
 def hello_world():
     return 'Tranquility Base'
@@ -22,3 +22,5 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# [END gae_python37_app]
